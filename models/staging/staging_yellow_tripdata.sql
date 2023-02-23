@@ -32,7 +32,7 @@ cast(payment_type as integer) as payment_type,
 {{get_payment_type_description ('payment_type')}} as payment_type_description,
 cast(congestion_surcharge as numeric) as congestion_surcharge,
 
-from {{ source('staging','yellow_tripsdata_2020') }}
+from {{ source('staging','yellow_tripsdata') }}
 where VendorID is not null
 
 {% if var('is_test_run',default=false) %}

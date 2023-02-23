@@ -6,5 +6,5 @@ sources:
     schema: de_trips_data
 
     tables:
-    - name: green_tripsdata_2020
-    - name: yellow_tripsdata_2020
+    - name: green_tripsdata
+    - name: yellow_tripsdata
